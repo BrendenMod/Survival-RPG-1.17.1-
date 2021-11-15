@@ -1,0 +1,2 @@
+[12:49:46] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:49:47] [main/INFO]: Reloading ResourceManager: Default, bukkit

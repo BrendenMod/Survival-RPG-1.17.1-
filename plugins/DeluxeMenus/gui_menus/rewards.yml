@@ -1,0 +1,937 @@
+menu_title: '&0Special Rewards'
+register_command: true
+open_command:
+- daily
+- rewards
+update_interval: 1
+size: 54
+items:
+  'Glasses-out':
+    material: black_stained_glass_pane
+    slots:
+    - 0
+    - 1
+    - 2
+    - 4
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 50
+    - 51
+    - 52
+    - 53
+    display_name: ' '
+  'Glasses-in':
+    display_name: ' '  
+    material: gray_stained_glass_pane
+    slots:
+    - 10
+    - 12
+    - 14
+    - 16
+    - 19
+    - 21
+    - 23
+    - 25
+    - 28
+    - 29
+    - 31
+    - 33
+    - 34
+    - 37
+    - 38
+    - 40
+    - 42
+    - 43
+  'menu':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZhMTFmZGQ3ZTZkNGQyMjIxZmU3ZTQ4OTQyZTJiMzdiMTU3MmY2M2UxNGI4MDMwOTk2Zjg2MWE2ODJjMzA0YSJ9fX0==
+    slot: 49
+    display_name: '&bMenú'
+    lore:
+    - ''
+    - '&7¡Volverás al menú'
+    - '&7de la modalidad!'
+    - ''
+    - '&e¡Click para abrir este menú!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[openguimenu] menu'
+    right_click_commands:
+    - '[close]'
+    - '[openguimenu] menu'          
+  'diarioBourgeois-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 3
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.bourgeois
+    display_name: '&bDaily Reward &8[&6Bourgeois&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7common key'
+    - '&8» &7x1 &7strange key'
+    - '&8» &710,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward.bourgeois true 24h'
+    - '[console] crate give to %player_name% common 2'
+    - '[console] eco give %player_name% 10000'
+    - '[console] crate give to %player_name% strange 1'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his daily reward of &8[&6Bourgeois&8]'
+  'diarioBourgeois-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 3
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.Bourgeois
+    display_name: '&bDaily Reward &8[&6Bourgeois&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7common key'
+    - '&8» &7x1 &7strange key'
+    - '&8» &710,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward.bourgeois%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'diarioBourgeois-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 3
+    priority: 3
+    display_name: '&bDaily Reward &8[&6Bourgeois&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7common key'
+    - '&8» &7x1 &7strange key'
+    - '&8» &710,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''
+  'semanalBourgeois-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0
+    slot: 5
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.Bourgeois
+    display_name: '&bWeekly reward &8[&6Bourgeois&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7common key'
+    - '&8» &7x2 &7strange key'
+    - '&8» &750,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward2.bourgeois true 1w'
+    - '[console] crate give to %player_name% common 3'
+    - '[console] eco give %player_name% 150000'
+    - '[console] crate give to %player_name% strange 2'
+    - '[console] crate give to %player_name% rare 1'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his weekly reward of &8[&6Bourgeois&8]'
+  'semanalBourgeois-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 5
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward2.bourgeois
+    display_name: '&bWeekly reward &8[&6Bourgeois&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7common key'
+    - '&8» &7x2 &7strange key'
+    - '&8» &750,000 &a⛁'
+    - '&8» &7150,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward2.bourgeois%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'semanalBourgeois-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 5
+    priority: 3
+    display_name: '&bWeekly reward &8[&6Bourgeois&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7common key'
+    - '&8» &7x2 &7strange key'
+    - '&8» &750,000 &a⛁'
+    - '&8» &7150,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''        
+  'diariofauno-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 11
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.Fauno
+    display_name: '&bDaily Reward &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7common key'
+    - '&8» &7x2 &7strange key'
+    - '&8» &725,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward.vip1 true 24h'
+    - '[console] crate give to %player_name% common 3'
+    - '[console] eco give %player_name% 25000'
+    - '[console] crate give to %player_name% strange 2'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his daily reward of &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+  'diariofauno-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 11
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.vip1
+    display_name: '&bDaily Reward &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7common key'
+    - '&8» &7x2 &7strange key'
+    - '&8» &725,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward.vip1%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'diariofauno-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 11
+    priority: 3
+    display_name: '&bDaily Reward &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7common key'
+    - '&8» &7x2 &7strange key'
+    - '&8» &725,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''
+  'semanalfauno-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0
+    slot: 20
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.Fauno
+    display_name: '&bWeekly reward &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x8 &7common key'
+    - '&8» &7x5 &7strange key'
+    - '&8» &7x1 &7rare key'
+    - '&8» &7150,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward2.vip1 true 1w'
+    - '[console] crate give to %player_name% common 8'
+    - '[console] eco give %player_name% 150000'
+    - '[console] crate give to %player_name% strange 5'
+    - '[console] crate give to %player_name% rare 1'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his weekly reward of &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+  'semanalfauno-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 20
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward2.vip1
+    display_name: '&bWeekly reward &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x8 &7common key'
+    - '&8» &7x5 &7strange key'
+    - '&8» &7x1 &7rare key'
+    - '&8» &7150,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward2.vip1%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'semanalfauno-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 20
+    priority: 3
+    display_name: '&bWeekly reward &e[&f⌖&6&ki&c&lVIP&6&ki&f⌖&e]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x8 &7common key'
+    - '&8» &7x5 &7strange key'
+    - '&8» &7x1 &7rare key'
+    - '&8» &7150,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''    
+  'diariogrifo-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 13
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.grifo
+    display_name: '&bDaily Reward &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7common key'
+    - '&8» &7x4 &7strange key'
+    - '&8» &750,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward.vip2 true 24h'
+    - '[console] crate give to %player_name% common 4'
+    - '[console] eco give %player_name% 50000'
+    - '[console] crate give to %player_name% strange 4'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his daily reward of &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+  'diariogrifo-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 13
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.vip2
+    display_name: '&bDaily Reward &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7common key'
+    - '&8» &7x4 &7strange key'
+    - '&8» &750,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward.vip2%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'diariogrifo-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 13
+    priority: 3
+    display_name: '&bDaily Reward &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7common key'
+    - '&8» &7x4 &7strange key'
+    - '&8» &750,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''
+  'semanalgrifo-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 22
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.grifo
+    display_name: '&bWeekly reward &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x8 &7common key'
+    - '&8» &7x7 &7strange key'
+    - '&8» &7x2 &7rare key'
+    - '&8» &7175,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward2.vip2 true 1w'
+    - '[console] crate give to %player_name% common 8'
+    - '[console] eco give %player_name% 175000'
+    - '[console] crate give to %player_name% strange 7'
+    - '[console] crate give to %player_name% rare 2'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his weekly reward of &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+  'semanalgrifo-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 22
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward2.vip2
+    display_name: '&bWeekly reward &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x8 &7common key'
+    - '&8» &7x7 &7strange key'
+    - '&8» &7x2 &7rare key'
+    - '&8» &7175,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward2.vip2%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'semanalgrifo-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 22
+    priority: 3
+    display_name: '&bWeekly reward &a[&e⌖&6&ki&c&lVIP&6&ki&e⌖&a]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x8 &7common key'
+    - '&8» &7x7 &7strange key'
+    - '&8» &7x2 &7rare key'
+    - '&8» &7175,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''        
+  'diariopegaso-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 15
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.pegaso
+    display_name: '&bDaily Reward &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7strange key'
+    - '&8» &7x1 &7rare key'
+    - '&8» &775,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward.vip3 true 24h'
+    - '[console] crate give to %player_name% rare 1'
+    - '[console] eco give %player_name% 75000'
+    - '[console] crate give to %player_name% strange 2'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his daily reward of &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+  'diariopegaso-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 15
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.vip3
+    display_name: '&bDaily Reward &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7strange key'
+    - '&8» &7x1 &7rare key'
+    - '&8» &775,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward.vip3%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'diariopegaso-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 15
+    priority: 3
+    display_name: '&bDaily Reward &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7strange key'
+    - '&8» &7x1 &7rare key'
+    - '&8» &775,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''
+  'semanalpegaso-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 24
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.pegaso
+    display_name: '&bWeekly reward &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x10 &7strange key'
+    - '&8» &7x4 &7rare key'
+    - '&8» &7200,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward2.vip3 true 1w'
+    - '[console] eco give %player_name% 200000'
+    - '[console] crate give to %player_name% strange 10'
+    - '[console] crate give to %player_name% rare 2'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his weekly reward of &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+  'semanalpegaso-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 24
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward2.vip3
+    display_name: '&bWeekly reward &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x10 &7strange key'
+    - '&8» &7x4 &7rare key'
+    - '&8» &7200,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward2.vip3%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'semanalpegaso-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 24
+    priority: 3
+    display_name: '&bWeekly reward &8[&e⌖&6&ki&c&lVIP&6&ki&e⌖&8]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x10 &7strange key'
+    - '&8» &7x4 &7rare key'
+    - '&8» &7200,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''         
+  'diariofenix-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 30
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.fenix
+    display_name: '&bDaily Reward &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7strange key'
+    - '&8» &7x3 &7rare key'
+    - '&8» &7100,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward.vip4 true 24h'
+    - '[console] crate give to %player_name% rare 3'
+    - '[console] eco give %player_name% 100000'
+    - '[console] crate give to %player_name% strange 5'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his daily reward of &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+  'diariofenix-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 30
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.vip4
+    display_name: '&bDaily Reward &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7strange key'
+    - '&8» &7x3 &7rare key'
+    - '&8» &7100,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward.vip4%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'diariofenix-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 30
+    priority: 3
+    display_name: '&bDaily Reward &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7strange key'
+    - '&8» &7x3 &7rare key'
+    - '&8» &7100,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''
+  'semanalfenix-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 39
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.fenix
+    display_name: '&bWeekly reward &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7rare key'
+    - '&8» &7x1 &7epic key'
+    - '&8» &7300,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward2.vip4 true 1w'
+    - '[console] eco give %player_name% 300000'
+    - '[console] crate give to %player_name% rare 5'
+    - '[console] crate give to %player_name% epic 1'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his weekly reward of &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+  'semanalfenix-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 39
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward2.vip4
+    display_name: '&bWeekly reward &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7rare key'
+    - '&8» &7x1 &7epic key'
+    - '&8» &7300,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward2.vip4%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'semanalfenix-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 39
+    priority: 3
+    display_name: '&bWeekly reward &5[&e⌖&f&ki&c&lVIP&f&ki&e⌖&5]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x5 &7rare key'
+    - '&8» &7x1 &7epic key'
+    - '&8» &7300,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''        
+  'diariodragon-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 32
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.dragon
+    display_name: '&bDaily Reward &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7rare key'
+    - '&8» &7x1 &7epic key'
+    - '&8» &7200,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward.vip5 true 24h'
+    - '[console] crate give to %player_name% epic 1'
+    - '[console] eco give %player_name% 200000'
+    - '[console] crate give to %player_name% rare 2'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his daily reward of &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+  'diariodragon-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 32
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.vip5
+    display_name: '&bDaily Reward &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7rare key'
+    - '&8» &7x1 &7epic key'
+    - '&8» &7200,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward.vip5%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'diariodragon-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 32
+    priority: 3
+    display_name: '&bDaily Reward &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x2 &7rare key'
+    - '&8» &7x1 &7epic key'
+    - '&8» &7200,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''
+  'semanaldragon-1':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRiNzEyNjk1ZWVhYzE1ODUwZDdlYjUxMDI3MTAyMjc5NTI5YzJjMDJmMjk0YjdjNmUyZTMyNGRhMzc1NTM4MSJ9fX0=
+    slot: 41
+    priority: 2
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward.dragon
+    display_name: '&bWeekly reward &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7rare key'
+    - '&8» &7x2 &7legendary key'
+    - '&8» &7500,000 &a⛁'
+    - ''
+    - '&8» &7Status: &a&lAVAILABLE'
+    - ''
+    - '&8» &eClick to claim!'
+    - ''
+    left_click_commands:
+    - '[close]'
+    - '[console] lp user %player_name% permission settemp reward2.vip5 true 1w'
+    - '[console] eco give %player_name% 500000'
+    - '[console] crate give to %player_name% epic 3'
+    - '[console] crate give to %player_name% legendary 2'
+    - '[console] broadcast &fThe user &e%player_name% &fclaimed his weekly reward of &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+  'semanaldragon-2':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIxYzNjMzlhZGZjZTEyZDJiODg0ZjcyZDFiZGY0NzRmYjIzODkyZWMyOWQ2OWZmMGRkMTExZDY5ZDcifX19
+    priority: 1
+    update: true
+    slot: 41
+    view_requirement:
+      requirements:
+        name2:
+          type: has permission
+          permission: reward2.vip5
+    display_name: '&bWeekly reward &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7rare key'
+    - '&8» &7x2 &7legendary key'
+    - '&8» &7500,000 &a⛁'
+    - ''
+    - '&8» &7Available in: &b%luckperms_expiry_time_reward2.vip5%'
+    left_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+    right_click_commands:
+    - '[sound] BLOCK_ANVIL_LAND'
+  'semanaldragon-3':
+    material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ
+    slot: 41
+    priority: 3
+    display_name: '&bWeekly reward &4[&e⌖&6&ki&c&lVIP&6&ki&e⌖&4]'
+    lore:
+    - '&7Claim this reward that'
+    - '&7it can contain different prizes.'
+    - ''
+    - '&f&lCONTENTS:'
+    - '&8» &7x3 &7rare key'
+    - '&8» &7x2 &7legendary key'
+    - '&8» &7500,000 &a⛁'
+    - ''
+    - '&8» &c&lNOT AVAILABLE'
+    - ''

@@ -1,0 +1,9 @@
+uuid: dff11650-8f9f-47c9-a2fc-bde4ac63c975
+name: Nurelia_x3
+primary-group: default
+permissions:
+- -scoreboard.activado
+- ezranks.rank.Bourgeois
+parents:
+- bourgeois
+- default

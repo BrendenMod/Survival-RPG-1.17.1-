@@ -1,0 +1,20 @@
+# |------------------------------------------------------------------------| #
+# | #                                                                    # | #
+# | #                    ---------------------------                     # | #
+# | #                    | BLPAPI v1.1 by xDec0de_ |                     # | #
+# | #                    ---------------------------                     # | #
+# | #                                                                    # | #
+# |------------------------------------------------------------------------| #
+
+BLPAPI:
+  Prefix: '&8[&6BattleLevels&bPAPI&8]'
+  NoPerm: '&7&l[&c&l!&7&l] &cInsufficient permissions &8(&e%perm%&8)&c.'
+Commands:
+  Reload:
+    Usage: '%prefix% &cUsage&8: &e/blp reload'
+    Success: '%prefix% &aconfig has been reloaded.'
+PlaceHolders:
+  IsTrue: '&atrue'
+  IsFalse: '&cfalse'
+Permissions:
+  Reload: blpapi.reload

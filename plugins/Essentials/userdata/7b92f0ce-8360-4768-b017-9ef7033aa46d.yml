@@ -1,0 +1,41 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1636975561211
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1636975907142
+  login: 1636975441757
+  kits:
+    vip3: 1636975651878
+    king: 1636975709520
+money: '0.0013141314312313415'
+last-account-name: KingBrenden
+lastlocation:
+  world: 4070a6f7-97b0-4f1d-8948-53e8d6658a0a
+  world-name: world
+  x: -1064.858397580255
+  y: 59.006562069441465
+  z: -3022.3359934354444
+  yaw: 29.853546142578125
+  pitch: -1.4997467994689941
+logoutlocation:
+  world: dbbe1acc-ddbc-4fc2-8662-7609a303deb7
+  world-name: lobby
+  x: 5.407061164243285
+  y: 82.0
+  z: -46.39442937359257
+  yaw: -40.43185806274414
+  pitch: 21.600074768066406
